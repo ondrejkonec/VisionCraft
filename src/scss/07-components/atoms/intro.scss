@@ -1,0 +1,35 @@
+/* Component structure
+==============================
+  Intro
+*/
+
+.a-intro {
+  position: inherit;
+  padding: 0 1em;
+  margin-bottom: 4em;
+}
+
+.a-intro__image {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.a-intro__count {
+  font-size: 16px;
+  color: #E8E77D;
+  display: block;
+  font-weight: 700;
+}
+.a-intro__title {
+  font-size: 24px;
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+.a-intro__text {
+  font-size: 16px;
+  display: block;
+  color: #fff;
+}

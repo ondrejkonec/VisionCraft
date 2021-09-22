@@ -1,0 +1,68 @@
+/* Component structure
+==============================
+  Menu
+*/
+
+.a-menu {
+  display: flex;
+  text-transform: uppercase;
+  font-size: $font-size-md;
+  display: inline-block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 270px;
+  height: 100%;
+  z-index: 99;
+  padding: 1em 0;
+  transform: translate(320px,0);
+  transition: transform .5s;
+  background-color: $color-blue-150;
+  @include media(large) {
+    position: inherit;
+    background: none;
+    width: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transform: translate(0,0);
+  }
+  &.is-opened {
+    transform: translate(0,0);
+  }
+}
+
+/* || Elements */
+
+.a-menu__list {
+  margin-top: 6em;
+  @include media(large) {
+    margin-top: 0;
+    display: flex;
+  }
+}
+.a-menu__item {
+  padding: .75em 2em;
+  text-align: right;
+  @include media(large) {
+    padding: 0 2em;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.a-menu__link {
+  text-decoration: none;
+  color: $color-white;
+  font-weight: $font-weight-900;
+}
+.a-menu__close {
+  display: block;
+  position: absolute;
+  right: 2em;
+  top: 24px;
+  display: inline-flex;
+  @include media(large) {
+    display: none;
+  }
+}

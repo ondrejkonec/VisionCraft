@@ -1,0 +1,30 @@
+/* Component structure
+==============================
+  Author
+*/
+
+.a-author {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -150px;
+  @include media(large) {
+    top: -130px;
+  }
+}
+
+.a-author__image {
+  width: 150px;
+  height: 150px;
+}
+.a-author__content {
+  padding-left: 1em;
+  color: $color-white;
+  font-size: $font-size-md;
+}
+.a-author__name {
+  font-weight: $font-weight-400;
+}
+.a-author__profession {
+  font-weight: $font-weight-900;
+}

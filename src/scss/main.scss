@@ -1,0 +1,99 @@
+@charset 'UTF-8';
+
+/* ============================================================================
+   MAIN STYLES
+   ========================================================================= */
+
+/**
+ *
+ * Main styles. 
+ *
+ * The structure is based on ITCSS and modified: * https: //www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+*/
+
+
+/* 01 - Settings
+   * Design tokens for UI
+   * Variables, Config
+*/
+@import '01-settings/reset';
+@import '01-settings/breakpoints';
+@import '01-settings/fonts';
+
+/* 02 - Design Tokens
+ * Visual vocabulary of the site
+*/
+@import '02-design-tokens/colors';
+@import '02-design-tokens/object-styles';
+@import '02-design-tokens/typography';
+
+/* 03 - Tools
+ * Globally used functions and mixins.
+*/
+@import '03-tools/media-queries';
+@import '03-tools/clearfix';
+
+/* 04 - Vendors (Generic)
+ * 3rd party vendors including Normalize, Reset, *
+ * This is the first layer which generates actual CSS.
+*/
+
+
+/* 05 - Elements
+ * Styling for bare HTML elements, e.g., H1, a, etc.
+ * These come with default styling from the browser so we can redefine them here.
+*/
+@import '05-elements/base';
+
+
+/* 06 - Skeleton
+ * Class-based selectors which define undecorated design patterns,
+ * for example, grid layout, media object or container.
+ * Cosemetic-free design patterns
+ * namespace: .s-
+*/
+@import '06-skeleton/grid';
+@import '06-skeleton/layouts';
+@import '06-skeleton/page-gradient';
+
+
+/* 07 - Components
+ * UI components
+ * atoms (a-): the smallest building blocks of a website, can't contain any other component
+ * molecules (m-): simple groups of UI elements functioning together as a unit
+ * organisms (o-): complex UI components composed of groups of molecules and/or atoms and/or other organisms
+*/
+
+// Atoms (a-)
+@import '07-components/atoms/author';
+@import '07-components/atoms/button';
+@import '07-components/atoms/icon';
+@import '07-components/atoms/intro';
+@import '07-components/atoms/languages';
+@import '07-components/atoms/menu';
+@import '07-components/atoms/overlay';
+@import '07-components/atoms/persona-box';
+@import '07-components/atoms/tag';
+
+
+// Molecules (m-)
+@import '07-components/molecules/fast-contact-box';
+@import '07-components/molecules/form';
+@import '07-components/molecules/hero';
+@import '07-components/molecules/overview-box';
+@import '07-components/molecules/promo-box';
+@import '07-components/molecules/section-box';
+@import '07-components/molecules/studies-box';
+
+// Organisms (o-)
+@import '07-components/organisms/footer';
+@import '07-components/organisms/header';
+
+
+/* 08 - Utilities
+ * Ability to override anything.
+ * It will most likely come with !important as we are sure to use them.
+*/
+@import '08-utilities/global';
+@import '08-utilities/spacing';
+

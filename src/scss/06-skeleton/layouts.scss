@@ -1,0 +1,31 @@
+/* Web layouts
+==============================
+*/
+
+// Content spacing
+.s-content-spacing {
+  margin-top: 32px;
+  @include media(large) {
+    margin-top: 72px;
+  }
+}
+
+// Button group
+.s-button-group {
+  position: relative;
+}
+.s-button-group > * {
+  margin-right: .45em;
+  margin-top: 0.745em;
+}
+
+// Tag group
+.s-tags {
+  & .a-tag {
+    font-size: $font-size-xs;
+  }
+  & > * {
+    margin-right: 0.5em;
+    margin-top: 0.75em;
+  }
+}

@@ -1,0 +1,42 @@
+/* Component structure
+==============================
+  Form
+*/
+
+.m-form {
+  position: relative;
+}
+.m-form__item {
+  margin-bottom: 2em;
+}
+.m-form__label {
+  font-size: $font-size-md;
+  font-weight: $font-weight-500;
+  display: block;
+  margin-bottom: 8px;
+}
+.m-form__input {
+  border-radius: $radius-pill;
+  border: 1px solid $color-gray-500;
+  height: 40px;
+  width: 100%;
+  @include media(medium) {
+    max-width: 458px; 
+  }
+  @include media(large) {
+    min-width: 458px; 
+  }
+
+}
+.m-form__textarea {
+  border: 1px solid $color-gray-500;
+  border-radius: 20px;
+  min-height: 300px;
+  width: 100%;
+  @include media(medium) {
+    max-width: 760px; 
+  }
+  @include media(large) {
+    min-width: 800px;
+  }
+}

@@ -1,0 +1,23 @@
+/* Component structure
+==============================
+  Overlay
+*/
+
+.a-overlay {
+  background-color: $color-gray-900;
+  opacity: .85;
+  pointer-events: none;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 25;
+  display: none;
+}
+
+/* || States */
+.a-overlay.is-active {
+  display: block;
+}
+

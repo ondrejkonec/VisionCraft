@@ -1,0 +1,105 @@
+/* Component structure
+==============================
+  Studies Box
+*/
+
+.m-studies-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+  @include media(large) {
+    min-height: 300px;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-bottom: 5em;
+  }
+}
+.m-studies-box__image {
+  position: relative;
+  left: 0;
+  display: none;
+  @include media(medium) {
+    display: block;
+    position: absolute;
+    max-width: 200px;
+    top: 15px;
+    left: 15px;
+  }
+  @include media(large) {
+    max-height: initial;
+    max-width: inherit;
+    top: auto;
+  }
+  @include media(huge) {
+    max-height: 298px;
+  }
+}
+.m-studies-box__content {
+  background-color: $color-blue-100;
+  border-radius: $radius-base;
+  padding: 1em;
+  @include media(medium) {
+    padding-left: 250px
+  }
+  @include media(large) {
+    max-width: 1050px;
+    padding: 2em 2em 2em 31em;
+  }
+  @include media(huge) {
+    max-width: 1050px;
+    padding: 2em 2em 2em 17em;
+  }
+}
+.m-studies-box__title {
+  color: $color-blue-150;
+  font-weight: $font-weight-700;
+  font-size: $font-size-xxl;
+  margin-bottom: .65em;
+  line-height: 1.2;
+  @include media(large) {
+    font-size: $font-size-xxxl;
+  }
+  @include media(huge) {
+    font-size: $font-size-big;
+  }
+}
+.m-studies-box__text {
+  font-size: $font-size-md;
+  margin-bottom: 1em;
+}
+.m-studies-box__tags {
+  margin-bottom: 1.75em;
+  & > * {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+/* || Modifiers */
+.m-studies-box--reverse {
+  justify-content: flex-start;
+  & .m-studies-box__content {
+    @include media(medium) {
+      padding-left: 15px;
+      padding-right: 240px;
+    }
+    @include media(large) {
+      padding: 2em 31em 2em 2em;
+    }
+    @include media(huge) {
+      padding: 2em 17em 2em 2em;
+    }
+  }
+  & .m-studies-box__image {
+    left: auto;
+    right: 0;
+    @include media(medium) {
+      right: 15px;
+    }
+  }
+}

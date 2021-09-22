@@ -1,0 +1,52 @@
+/* Component structure
+==============================
+  Fast contact box
+*/
+
+.m-fast-contact-box {
+  border-radius: $radius-base;
+  padding: 2em;
+  background-color: $color-blue-100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @include media(large) {
+    margin-left: 2em;
+    max-width: 400px;
+  }
+}
+.m-fast-contact-box__title {
+  color: $color-blue-150;
+  font-weight: $font-weight-700;
+  margin-bottom: 1em;
+  font-size: $font-size-xxxl;
+  text-align: center;
+}
+.m-fast-contact-box__button {
+  margin-bottom: 2em;
+}
+.m-fast-contact-box__icon {
+  margin-bottom: 2em;
+  display: inline-block;
+}
+.m-fast-contact-box__name {
+  font-weight: $font-weight-900;
+}
+.m-fast-contact-box__position {
+  font-weight: $font-weight-500;
+  margin-bottom: 1em;
+}
+.m-fast-contact-box__text {
+  line-height: 1.5;
+  text-align: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.m-fast-contact-box__link {
+  font-weight: $font-weight-500;
+  text-align: center;
+  color: $color-blue-150
+}

@@ -1,0 +1,21 @@
+/* Component structure
+==============================
+  Icon
+*/
+
+.a-icon {
+  color: currentColor;
+}
+
+
+/* || Modifiers */
+
+.a-icon--small {
+  width: 16px;
+}
+.a-icon--medium {
+  width: 24px;
+}
+.a-icon--large {
+  width: 32px;
+}

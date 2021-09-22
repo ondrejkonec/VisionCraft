@@ -1,0 +1,37 @@
+/* Global utilities
+==============================
+*/
+
+/**
+ * Completely hide content from view and from screenreaders.
+ */
+.u-hide {
+  display: none !important;
+}
+
+/**
+ * Hide content from view, but leave it accessible to screenreaders.
+ *
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.u-hide-visually {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+/* || Centering */
+.u-center-item {
+  display: table;
+  margin: 0 auto;
+}
+
+.u-perex {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-500;
+  @include media(medium) {
+    font-size: $font-size-xxl;
+  }
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    ____Title____
+  </title>
+
+  <meta name="description" content="____Description____">
+  <meta name=”format-detection” content=”telephone=no”>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+
+<body id="Body">
+  <div class="a-overlay" id="Overlay" onclick="closeMenu()"></div>
+  <div class="s-page-gradient"></div>
+  <div class="s-grid">
+    <div class="s-grid-container">
+      <header class="o-header">
+        <a href="/"><img class="o-header__logo" src="svg/visioncraft-logo.svg" alt=""></a>
+        <nav class="o-header__menu">
+          <div class="a-menu" id="Menu">
+            <a href="javascript:void(0)" class="a-menu__close" onclick="closeMenu()">
+              <img class="a-icon a-icon--medium" src="svg/close.svg" alt="">
+            </a>
+            <ul class="a-languages">
+              <li>
+                <a href="#" class="is-active">CZ</a>
+              </li>
+              <li>
+                <a href="#">EN</a>
+              </li>
+            </ul>
+            <ul class="a-menu__list">
+              <li class="a-menu__item">
+                <a href="/" class="a-menu__link">Domů</a>
+              </li>
+              <li class="a-menu__item">
+                <a href="#" class="a-menu__link">Naše řešení</a>
+              </li>
+              <li class="a-menu__item">
+                <a href="studie.html" class="a-menu__link">Případové studie</a>
+              </li>
+              <li class="a-menu__item">
+                <a href="onas.html" class="a-menu__link">O nás</a>
+              </li>
+              <li class="a-menu__item">
+                <a href="kontakt.html" class="a-menu__link">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a href="#" class="o-header__hamburger" onclick="openMenu()">
+          <img class="a-icon a-icon--large" src="svg/hamburger.svg" alt=""><span class="u-hide-visually">Menu</span>
+        </a>
+      </header>
+      <main>
+        <div class="s-grid-row">
+          <div class="s-grid-col">
+            <div class="m-hero m-hero--static">
+              <h1 class="m-hero__title m-hero__title--small">Kontakt</h1>
+              <p class="m-hero__descsription">Pár slov o tom jak kontakt probíhá, jak rychle odovídáme atd.</p>
+              <img class="m-hero__decoration" src="svg/contact.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="s-grid-row s-content-spacing">
+          <div class="s-grid-col s-grid-content-2-3">
+          <form class="m-form" action="">
+            <div class="m-form__item">
+              <label class="m-form__label" for="name">Jméno a přijímení</label>
+              <input class="m-form__input" type="text">
+          </div>
+            <div class="m-form__item">
+              <label class="m-form__label" for="name">E-mail</label>
+              <input class="m-form__input" type="email">
+          </div>
+            <div class="m-form__item">
+              <label class="m-form__label" for="name">Telefon (povinné)</label>
+              <input class="m-form__input" type="tel">
+          </div>
+            <div class="m-form__item">
+              <label class="m-form__label" for="name">Text dotazu</label>
+              <textarea class="m-form__textarea"></textarea>
+          </div>
+          <div class="m-form__item">
+            <input class="a-button a-button--large" type="submit" value="Odeslat zprávu">
+          </div>
+          </form>
+        </div>
+        <div class="s-grid-col s-grid-content-1-3">
+          <div class="m-fast-contact-box">
+            <img class="m-fast-contact-box__icon" src="img/studies-author.png" alt="">
+            <span class="m-fast-contact-box__name">Pavel Habarata</span>
+            <span class="m-fast-contact-box__position">Sales</span>
+            <p class="m-fast-contact-box__text">+420 608 099 123 <br>
+              Po–pá 8.00 – 17.00h</p>
+              <a class="m-fast-contact-box__link" href="mailto:habarata@visioncraft.cz">habarata@visioncraft.cz</a>
+          </div>
+        </div>
+        </div>
+        <div class="s-grid-row s-content-spacing">
+          <div class="s-grid-col s-grid-content-2-3">
+            <div class="u-s-vb-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83421.29842543419!2d16.507921611328683!3d49.202161089665154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4712943ac03f5111%3A0x400af0f6614b1b0!2sBrno!5e0!3m2!1scs!2scz!4v1622098153585!5m2!1scs!2scz" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="s-grid-col s-grid-content-1-3">
+          <div class="m-fast-contact-box">
+            <h4 class="m-fast-contact-box__title">Sídlo společnosti</h4>
+            <p class="m-fast-contact-box__name">VisionCraft, s.r.o.</p>
+            <p class="m-fast-contact-box__text">Svážná 488 <br>
+              634 00  Brno-Nový Lískovec</p>
+              <a class="m-fast-contact-box__link" href="mailto:info@visioncraft.cz">info@visioncraft.cz</a>
+          </div>
+          <div class="m-fast-contact-box u-s-vt-2">
+            <h4 class="m-fast-contact-box__title">Obchodní údaje</h4>
+            <p class="m-fast-contact-box__name">VisionCraft, s.r.o.</p>
+            <p class="m-fast-contact-box__text">IČ: 07400942 <br>DIČ: 00000000</p>
+            <p class="m-fast-contact-box__text">Svahová 610/25 <br>623 00 Brno-Kohoutovice</p>
+          </div>
+        </div>
+        </div>
+
+        </main>
+    </div>
+  </div>
+  <footer class="o-footer">
+    <div class="s-grid">
+      <div class="s-grid-container">
+        <div class="o-footer__navigation">
+          <ul class="o-footer__menu">
+            <li>
+              <a href="/">Domů</a>
+            </li>
+            <li>
+              <a href="#">Naše řešení</a>
+            </li>
+            <li>
+              <a href="studie.html">Případové studie</a>
+            </li>
+            <li>
+              <a href="onas.html">O nás</a>
+            </li>
+            <li>
+              <a href="kontakt.html">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    function openMenu() {
+      var element = document.getElementById("Menu");
+      element.classList.add("is-opened");
+      var element2 = document.getElementById("Overlay");
+      element2.classList.add("is-active");
+      var body = document.body;
+      body.classList.add("is-not-scrollable");
+    }
+    function closeMenu() {
+      var element = document.getElementById("Menu");
+      element.classList.remove("is-opened");
+      var element2 = document.getElementById("Overlay");
+      element2.classList.remove("is-active");
+      var body = document.body;
+      body.classList.remove("is-not-scrollable");
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+/* Component structure
+==============================
+  Languages
+*/
+
+.a-languages {
+  position: relative;
+  text-align: right;
+  top: 60px;
+  right: 30px;
+  @include media(large) {
+    top: -17px;
+    position: absolute;
+    right: 0;
+  }
+  @include media(huge) {
+    top: -30px
+  }
+}
+.a-languages li {
+  display: inline-block;
+  padding-left: 12px;
+  position: relative;
+}
+.a-languages li:first-child {
+  &::before {
+    content: '';
+    width: 1px;
+    height: 12px;
+    top: 6px;
+    right: -8px;
+    background: $color-white;
+    display: block;
+    position: absolute;
+  }
+}
+.a-languages li a {
+  color: $color-white;
+  font-weight: $font-weight-500;
+  font-size: $font-size-sm;
+  &.is-active {
+    text-decoration: none;
+  }
+}

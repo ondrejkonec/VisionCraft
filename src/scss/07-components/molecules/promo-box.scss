@@ -1,0 +1,71 @@
+/* Component structure
+==============================
+  Promo Box
+*/
+
+.m-promo-box {
+  border-radius: $radius-base;
+  background-color: $color-blue-150;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 3em;
+  margin-top: 15px;
+  @include media(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  @include media(large) {
+    padding: 2.5em 4em;
+    margin-top: -42px;
+    margin-bottom: 5em;
+  }
+  @include media(huge) {
+    gap: 2em 8em;
+    justify-content: center;
+    margin-top: 52px;
+  }
+}
+
+
+/* || Elements */
+
+.m-promo-box__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1.5em;
+  @include media(medium) {
+    margin-bottom: 0;
+    width: calc(25% - 2em);
+  }
+  @include media(huge) {
+    width: calc(25% - 6em);
+  }
+}
+
+.m-promo-box__decoration {
+  max-width: 50px;
+  @include media(medium) {
+    max-width: 100px;
+  }
+}
+
+.m-promo-box__text {
+  color: $color-white;
+  font-size: $font-size-md;
+  line-height: 1.3;
+  font-weight: $font-weight-700;
+  margin-top: 1em;
+  text-align: center;
+  max-width: 240px;
+  @include media(medium) {
+    font-size: $font-size-sm;
+  }
+  @include media(large) {
+    font-size: $font-size-lg;
+  }
+}

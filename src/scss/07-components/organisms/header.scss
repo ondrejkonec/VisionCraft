@@ -1,0 +1,38 @@
+/* Component structure
+==============================
+  Header
+*/
+
+.o-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+  @include media(huge) {
+    padding: 3em 0 3.5em
+  }
+}
+
+
+/* || Elements */
+
+.o-header__logo {
+  height: 32px;
+  @include media(large) {
+    height: 52px;
+  }
+}
+
+.o-header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.o-header__hamburger {
+  display: inherit;
+  & span {
+    text-indent: -9999px;
+  }
+  @include media(large) {
+    display: none;
+  }
+}

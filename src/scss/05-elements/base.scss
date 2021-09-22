@@ -1,0 +1,72 @@
+/* RAW HTML Elements
+==============================
+*/
+
+/* || General styles */
+@at-root {
+  @-ms-viewport {
+    width: device-width;
+  }
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-root;
+  line-height: $line-height-root;
+
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: scrollbar;
+}
+body.is-not-scrollable {
+  overflow: hidden;
+  width: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+main {
+  padding-bottom: 15px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: $font-size-big;
+  color: $color-blue-150;
+  font-weight: $font-weight-700;
+  line-height: 1.1;
+  margin-top: 2em;
+  margin-bottom: 1.25em;
+  @include media(large) {
+    font-size: $font-size-huge;
+  }
+}
+
+p {
+  font-size: $font-size-md;
+  line-height: 1.5;
+  margin-bottom: 1.8em;
+}

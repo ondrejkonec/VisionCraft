@@ -1,0 +1,115 @@
+/* Component structure
+==============================
+  Section Box
+*/
+
+.m-section-box {
+  position: relative;
+  margin-bottom: 15px;
+  @include media(large) {
+    display: flex;
+    height: 404px;
+  }
+  @include media(large) {
+    margin-top: 3em;
+  }
+}
+
+
+/* || Elements */
+.m-section-box__decoration {
+  display: none;
+  @include media(large) {
+    display: block;
+    flex-shrink: 0;
+  }
+}
+
+.m-section-box__content {
+  background: $color-blue-100;
+  border-radius: $radius-base;
+  padding: 1.5em;
+  width: 100%;
+  @include media(medium) {
+    padding: 1.5em 3.5em;
+  }
+  @include media(large) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 2.5em 3.5em;
+  }
+}
+
+.m-section-box__title {
+  font-size: $font-size-xxxl;
+  color: $color-blue-150;
+  font-weight: $font-weight-700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  @include media(large) {
+    font-size: $font-size-huge;
+    margin-bottom: 16px;
+  }
+}
+
+.m-section-box__list {
+  list-style-type: none;
+  font-size: $font-size-xl;
+  margin-bottom: .5em;
+  & li {
+    position: relative;
+    padding: 4px 0px 4px 32px;
+    font-size: $font-size-md;
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: $color-blue-150;
+      border-radius: $radius-pill;
+      position: absolute;
+      left: 4px;
+      top: 11px;
+      @include media(medium) {
+        width: 12px;
+        height: 12px;
+        top: 13px;
+      }
+    }
+    @include media(medium) {
+      font-size: $font-size-lg;
+    }
+    @include media(large) {
+      font-size: $font-size-xl;
+    }
+  }
+  @include media(large) {
+    margin-bottom: 1em;
+  }
+}
+
+
+/* || Modifiers */
+.m-section-box--reverse {
+  text-align: right;
+  & .m-section-box__content {
+    @include media(large) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-left-radius: $radius-base;
+      border-bottom-left-radius: $radius-base;
+    }
+  }
+  & .m-section-box__list {
+    & li {
+      position: relative;
+      padding: 4px 32px 4px 0px;
+      &::before {
+        right: 4px;
+        left: auto
+      }
+    }
+  }
+  & .m-section-box__decoration {
+    transform: rotate(180deg);
+  }
+}

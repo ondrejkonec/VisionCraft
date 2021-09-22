@@ -1,0 +1,109 @@
+/* Component structure
+==============================
+  Overview Box
+ */
+
+.m-overview-box {
+  background: $color-blue-100;
+  border-radius: $radius-base;
+  padding: 3.5em 1.5em 1.5em;
+  margin-bottom: 15px;
+  margin-top: calc(15px + 1em);
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include media(medium) {
+    padding: 4.5em 1.5em 1.5em;
+    min-height: calc(100% - 84px);
+    min-height: 160px;
+    margin-bottom: 2em;
+  }
+  @include media(huge) {
+    padding: 5.5em 1.5em 2.5em;
+    margin-bottom: 15px;
+    margin-top: calc(57px + 1em);
+    position: relative;
+  }
+}
+
+
+/* || Elements */
+
+.m-overview-box__icon {
+  position: absolute;
+  top: -32px;
+  left: calc(50% - 32px);  // half size of icon
+  width: 64px;
+  @include media(medium) {
+    width: 74px;
+    top: -37px;
+    left: calc(50% - 37px);
+  }
+  @include media(huge) {
+    width: 114px;
+    top: -57px;
+    left: calc(50% - 57px);
+  }
+}
+
+.m-overview-box__title {
+  font-weight: $font-weight-700;
+  color: $color-blue-150;
+  font-size: $font-size-xxl;
+  margin-bottom: 1em;
+  line-height: 1.2;
+  display: block;
+}
+
+.m-overview-box__emphasis {
+  font-weight: $font-weight-700;
+  font-size: $font-size-lg;
+  text-align: center;
+  display: block;
+  line-height: 1.37;
+  @include media(medium) {
+    max-width: 240px;
+  }
+}
+
+.m-overview-box__text {
+  color: $color-black;
+  font-size: $font-size-md;
+}
+
+.m-overview-box__button {
+  display: table;
+  margin: 1em auto 0;
+}
+
+
+/* || Modifiers */
+
+.m-overview-box--small {
+  padding: 1.5em;
+  @include media(medium) {
+    padding-top: 3.5em;
+  }
+  & .m-overview-box__emphasis {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+  }
+  & .m-overview-box__icon {
+    @include media(huge) {
+      width: 74px;
+      top: -37px;
+      left: calc(50% - 37px);
+    }
+  }
+}
+
+.m-overview-box--expressive {
+  & .m-overview-box__emphasis {
+    color: $color-blue-150
+  }
+}

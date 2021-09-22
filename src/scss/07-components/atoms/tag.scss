@@ -1,0 +1,13 @@
+/* Component structure
+==============================
+  Tag
+*/
+
+.a-tag {
+  background: $color-blue-125;
+  border-radius: $radius-pill;
+  font-weight: $font-weight-900;
+  font-size: $font-size-xxs;
+  padding: 10px 14px;
+  display: inline-block;
+}

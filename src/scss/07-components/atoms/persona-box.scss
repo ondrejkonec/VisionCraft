@@ -1,0 +1,30 @@
+/* Component structure
+==============================
+  Persona box
+*/
+
+
+.a-persona-box {
+  border-radius: $radius-base;
+  padding: 2em;
+  background-color: $color-blue-100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: $font-size-xxxl;
+  margin-bottom: 15px;
+  @include media(medium) {
+    margin-bottom: 30px;
+  }
+  @include media(large) {
+    margin-bottom: 1em;
+  }
+}
+.a-persona-box__name {
+  padding-top: 1.25em;
+  font-weight: $font-weight-500;
+}
+.a-persona-box__position {
+  font-weight: $font-weight-400;
+}
